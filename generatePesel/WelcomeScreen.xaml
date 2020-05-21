@@ -1,0 +1,17 @@
+﻿<Window x:Class="generatePesel.WelcomeScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:generatePesel"
+        mc:Ignorable="d"
+        Title="Pesel verification" Height="450" Width="800">
+    <Grid Height="450" Width="800">
+        <Label Content="Main feature:" Margin="124,36,594,388"></Label>
+        <Label Content="Additional features:" Margin="124,214,557,210"></Label>
+        <Button Margin="124,240,124,167" Content="Generate pesel" Click="Generate_Click"></Button>
+        <Button Margin="124,313,124,95" Content="Validate pesel" Click="Validate_Click"></Button>
+        <Button Margin="124,62,124,287" Content="Verify pesel" Click="Verify_Click"></Button>
+        <Label Content="© Karol Stumski" Margin="674,389,10,0" VerticalAlignment="Top" Width="116" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

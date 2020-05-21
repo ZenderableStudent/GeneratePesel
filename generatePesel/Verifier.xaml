@@ -1,0 +1,22 @@
+﻿<Window x:Class="generatePesel.Verifier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:generatePesel"
+        mc:Ignorable="d"
+        Title="Verifier" Height="450" Width="800">
+    <!-- Karol Stumski. All rights reserved -->
+    <Grid Height="450" Width="800">
+        <Label Name="lblPeselStatus" Margin="610,31,66,393" Content=""></Label>
+        <Label Name="lblGenderStatus" Margin="488,137,188,287" Content=""></Label>
+        <Label Name="lblBirtDateStatus" Margin="488,92,188,332" Content=""></Label>
+        <TextBox Name="txbYourPesel" Margin="229,22,229,377" Text="Your pesel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" MaxLength="11"></TextBox>
+        <Button Content="Verify" Margin="342,185,342,228" Click="Button_Click"></Button>
+        <Label Name="lblVerifyStatus" Content="" Margin="229,272,229,115" FontSize="30" HorizontalContentAlignment="Center" Foreground="Red"></Label>
+        <CheckBox Name="chbMale" Content="Male" HorizontalAlignment="Left" Margin="342,155,0,0" VerticalAlignment="Top" Checked="Male_Checked" IsChecked="False" Width="116" HorizontalContentAlignment="Center"/>
+        <CheckBox Name="chbFemale" Content="Female" HorizontalAlignment="Left" Margin="342,131,0,0" VerticalAlignment="Top" Checked="Female_Checked"  IsChecked="True" Width="116" HorizontalContentAlignment="Center"/>
+        <DatePicker Name="dataPicker" Margin="342,92,342,330"></DatePicker>
+        <Label Content="© Karol Stumski" Margin="674,389,10,0" VerticalAlignment="Top" Width="116" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>
